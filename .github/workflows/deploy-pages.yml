@@ -5,6 +5,10 @@ on:
     branches: [ feat/hide-time ]
   workflow_dispatch: {}
 
+# Garantir permissões necessárias para o GITHUB_TOKEN escrever na branch gh-pages
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
