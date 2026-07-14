@@ -1,0 +1,13 @@
+{
+  "name": "cubomm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:site": "http-server site-example -p 8000",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "http-server": "^14.1.1"
+  }
+}

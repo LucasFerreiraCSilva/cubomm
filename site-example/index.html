@@ -12,7 +12,7 @@
     <h1>Exemplo: ocultar tempo durante a montagem</h1>
 
     <label class="checkbox">
-      <input id="hide-time" type="checkbox" checked>
+      <input id="hide-time" type="checkbox" aria-label="Ocultar tempo até término" checked>
       Ocultar tempo até o término da montagem
     </label>
 
@@ -21,7 +21,7 @@
       <button id="reset">Reset</button>
     </div>
 
-    <div class="status">
+    <div class="status" role="region" aria-live="polite" aria-label="Status da montagem">
       <div class="progress-wrap">
         <div id="progress" class="progress"></div>
       </div>
@@ -31,7 +31,7 @@
         <span id="time" class="time">00:00</span>
       </div>
 
-      <div id="finished" class="finished hidden">Montagem concluída!</div>
+      <div id="finished" class="finished hidden" role="status">Montagem concluída!</div>
     </div>
   </main>
 </body>
