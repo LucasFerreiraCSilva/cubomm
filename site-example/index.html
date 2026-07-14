@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exemplo - Ocultar tempo até término</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Exemplo: ocultar tempo durante a montagem</h1>
+
+    <label class="checkbox">
+      <input id="hide-time" type="checkbox" checked>
+      Ocultar tempo até o término da montagem
+    </label>
+
+    <div class="controls">
+      <button id="start">Iniciar montagem</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="status">
+      <div class="progress-wrap">
+        <div id="progress" class="progress"></div>
+      </div>
+
+      <div class="time-row">
+        <span>Tempo decorrido:</span>
+        <span id="time" class="time">00:00</span>
+      </div>
+
+      <div id="finished" class="finished hidden">Montagem concluída!</div>
+    </div>
+  </main>
+</body>
+</html>
